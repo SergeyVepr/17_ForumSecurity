@@ -5,6 +5,7 @@ import {User} from "../model/User";
 import {ForbiddenError, NotFoundError} from "routing-controllers";
 import {decodeBase64, encodeBase64} from "../utils/utilsForPassword";
 
+
 export default class UserServiceImpl implements UserService {
 
     async login(token: string): Promise<UserDto> {
