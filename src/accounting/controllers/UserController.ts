@@ -1,11 +1,10 @@
-import {Body, Controller, Delete, Get, HeaderParam, Param, Post, Put, Req, Res, UseBefore} from "routing-controllers";
+import {Body, Controller, Delete, Get, HeaderParam, Param, Post, Put, Res, UseBefore} from "routing-controllers";
 import NewUserDto from "../dto/NewUserDto";
 import UserService from "../service/UserService";
 import UserServiceImpl from "../service/UserServiceImpl";
 import {Response} from 'express';
 import {AuthMiddleware} from "../Middleware/AuthMiddleware";
 import {AdminMiddleWare} from "../Middleware/AdminMiddleWare";
-import {NewPasswordMiddleware} from "../Middleware/NewPasswordMiddleware";
 
 @Controller('/account')
 export default class UserController {
